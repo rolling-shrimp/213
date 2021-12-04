@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(purple), to(#6d6868));
+  background: linear-gradient(90deg, purple, #6d6868);
+}
+
+body header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header h1 {
+  padding: 1rem;
+  color: white;
+  font-size: 3rem;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Firefox */
+}
+
+body form input,
+body form button {
+  padding: 0.25rem, 0.5rem;
+  border: none;
+  font-size: 1.75rem;
+  margin: 0.1rem;
+}
+
+body form inpit[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+body form input::-webkit-outer-spin-button,
+body form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body form input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=style.css.map */
