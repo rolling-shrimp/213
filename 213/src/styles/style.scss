@@ -45,3 +45,45 @@ body {
     }
   }
 }
+.todo {
+  background-color: white;
+
+  width: 30%;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  .ptag {
+    color: purple;
+    font-size: 1.5rem;
+    width: 150px;
+    text-align: left;
+  }
+  animation: flyIn 1s linear;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 30vh;
+}
+.animate__animated.animate__zoominRight {
+  --animate-duration: 3s;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+  height: 40vh;
+}
+.Caruu {
+  height: 50vh;
+}
+@keyframes flyIn {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}

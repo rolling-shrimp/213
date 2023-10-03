@@ -1,47 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(purple), to(#6d6868));
-  background: linear-gradient(90deg, purple, #6d6868);
+  background: linear-gradient(90deg, purple, rgb(109, 104, 104));
 }
-
 body header {
   height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 body header h1 {
   padding: 1rem;
   color: white;
   font-size: 3rem;
 }
-
 body form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   /* Firefox */
 }
-
 body form input,
 body form button {
   padding: 0.25rem, 0.5rem;
@@ -49,19 +31,64 @@ body form button {
   font-size: 1.75rem;
   margin: 0.1rem;
 }
-
-body form inpit[type="number"] {
+body form inpit[type=number] {
   width: 50px;
   text-align: center;
 }
-
 body form input::-webkit-outer-spin-button,
 body form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-body form input[type="number"] {
+body form input[type=number] {
   -moz-appearance: textfield;
 }
-/*# sourceMappingURL=style.css.map */
+
+.todo {
+  background-color: white;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  animation: flyIn 1s linear;
+}
+.todo .ptag {
+  color: purple;
+  font-size: 1.5rem;
+  width: 150px;
+  text-align: left;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 30vh;
+}
+
+.animate__animated.animate__zoominRight {
+  --animate-duration: 3s;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 40vh;
+}
+
+.Caruu {
+  height: 50vh;
+}
+
+@keyframes flyIn {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
