@@ -1,12 +1,7 @@
 import Show from "./Show";
 import "./styles/style.css";
-function App() {
-  let button = document.querySelector("form button");
-  button.addEventListener("clck", (e) => {
-    let buttonpressed = e.target.parentElement;
-    let newitem = document.createElement("p");
-  });
 
+function App() {
   return (
     <div className="App">
       <header>
