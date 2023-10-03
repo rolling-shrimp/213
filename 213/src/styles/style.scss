@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      padding: 1rem;
+      color: white;
+      font-size: 3rem;
+    }
+  }
+  background: linear-gradient(90deg, purple, rgb(109, 104, 104));
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input,
+    button {
+      padding: 0.25rem, 0.5rem;
+      border: none;
+      font-size: 1.75rem;
+      margin: 0.1rem;
+    }
+    inpit[type="number"] {
+      width: 50px;
+      text-align: center;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+}
